@@ -6,6 +6,7 @@ export default function Document() {
       <Head>
         <meta content="#ffffff" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
+        <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
       </Head>
       <body className="bg-white dark:bg-black text-white dark:text-black">
         <Main />

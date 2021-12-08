@@ -63,6 +63,10 @@ export default function Container(props) {
           property="og:site_name"
           content={process.env.NEXT_PUBLIC_WEBSITE_LINK}
         />
+        <meta
+          name="keywords"
+          content={process.env.NEXT_PUBLIC_WEBSITE_KEYWORDS}
+        />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
@@ -71,7 +75,7 @@ export default function Container(props) {
             <meta name="twitter:card" content="summary_large_image" />
             <meta
               name="twitter:site"
-              content={process.env.NEXT_PUBLIC_TWITTER_PAGE}
+              content={`@${process.env.NEXT_PUBLIC_TWITTER_PAGE}`}
             />
             <meta name="twitter:title" content={meta.title} />
             <meta name="twitter:description" content={meta.description} />
